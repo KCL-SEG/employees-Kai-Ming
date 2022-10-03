@@ -40,7 +40,7 @@ class Employee:
 
         pay = str(self.pay)
         if self.salary:
-            pay_type = 'monthy salary'
+            pay_type = 'monthly salary'
             pay_str = pay_type + ' of ' + pay
         else:
             pay_type = 'contract'
@@ -51,12 +51,12 @@ class Employee:
             comm_str = ' and receives a '
             if self.bonus > 0:
                 bonus = str(self.bonus) 
-                comm_str += 'bonus commision of ' + bonus
+                comm_str += 'bonus commission of ' + bonus
             elif self.comm_contract > 0:
                 comm_contract = str(self.comm_contract)
                 comm_contract_len = str(self.comm_contract_len)
                 comm_str += 'commission for ' + comm_contract_len + ' contract(s) at ' + comm_contract + '/contract'
-        full_str = self.name + ' works on a ' + pay_str + comm_str + '. Their total pay is ' + total_pay + '.'
+        full_str = self.name + ' works on a ' + pay_str + comm_str + '.  Their total pay is ' + total_pay + '.'
         #print(full_str)
         return full_str
 
